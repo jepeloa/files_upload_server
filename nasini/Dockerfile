@@ -14,7 +14,7 @@ RUN pip install -r requirements.txt
 COPY . .
 
 # Expone el puerto 8501 que es el predeterminado para Streamlit
-EXPOSE 8501
+EXPOSE 8502
 
 # Comando para ejecutar la aplicación
 CMD ["streamlit", "run", "login.py"]

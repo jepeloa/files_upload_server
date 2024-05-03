@@ -3,7 +3,7 @@ services:
   streamlit_app:
     build: .
     ports:
-      - "8501:8501"
+      - "8502:8502"
     environment:
       - USERNAME=${USERNAME}
       - PASSWORD=${PASSWORD}

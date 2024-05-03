@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  streamlit_app:
+    build: .
+    ports:
+      - "8501:8501"
+    environment:
+      - USERNAME=${USERNAME}
+      - PASSWORD=${PASSWORD}
+    volumes:
+      - .:/app/files/nasini
+      - data_volume:/root/IA/nasini
+volumes:
+  data_volume:

@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 8502
 
 # Comando para ejecutar la aplicación
-CMD ["streamlit", "run", "login.py"]
+CMD ["streamlit", "run", "login.py","--server.port", "8502"]
